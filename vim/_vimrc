@@ -3,10 +3,26 @@ set nobackup
 set nowritebackup
 set noundofile
 
+" delete newlines
+set backspace=indent,eol,start
+
+" relative numbers
+set relativenumber
+
 " mapping
-"" time
+"- time
 :map <F2> :echo strftime('%r')<CR>
 
-"" bufferless delete
+"- bufferless delete
 nnoremap d "_d
 nnoremap dd "_dd
+
+"- tex (t) macros
+"-- textrm macro
+nnoremap tt i\textrm{}<Esc>i
+"-- math mode macro
+nnoremap t4 a$$<Esc>
+"-- superscript macro
+nnoremap t6 la^{}<Esc>i
+"-- subscript macro
+nnoremap t7 la_{}<Esc>i
