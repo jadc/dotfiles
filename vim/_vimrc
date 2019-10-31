@@ -2,6 +2,7 @@
 set nobackup
 set nowritebackup
 set noundofile
+set noswapfile
 
 " delete newlines
 set backspace=indent,eol,start
