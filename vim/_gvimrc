@@ -1,8 +1,7 @@
-" Sets font
+" Sets font to Fire Code or Consolas, whichever available
 if has('gui_running')
-  set guifont=Fira_Code_Retina:h12:cANSI:qDRAFT
+  set guifont=Fira_Code_Retina:h12:cANSI:qDRAFT,guifont=Consolas:h14:cANSI:qDRAFT
 endif
-
 
 " Color scheme
 set termguicolors
