@@ -1,0 +1,16 @@
+" Sets font
+if has('gui_running')
+  set guifont=Fira_Code_Retina:h12:cANSI:qDRAFT
+endif
+
+
+" Color scheme
+set termguicolors
+set background=dark
+colorscheme edge
+syntax on
+
+" Hides ugly ass shit
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r

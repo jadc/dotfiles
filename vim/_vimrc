@@ -1,0 +1,12 @@
+" disable backups
+set nobackup
+set nowritebackup
+set noundofile
+
+" mapping
+"" time
+:map <F2> :echo strftime('%r')<CR>
+
+"" bufferless delete
+nnoremap d "_d
+nnoremap dd "_dd
