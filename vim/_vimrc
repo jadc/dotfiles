@@ -10,19 +10,34 @@ set backspace=indent,eol,start
 " relative numbers
 set relativenumber
 
+" searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+noremap <silent> <leader><cr> :noh<cr>
+
 " mapping
+"- semi colon
+imap ;; <Esc>
+imap ;i ![]()<Esc>i
+
 "- time
-:map <F2> :echo strftime('%r')<CR>
+map <F2> :echo strftime('%r')<CR>
 
 "- bufferless delete
 nnoremap d "_d
 nnoremap dd "_dd
 
+"- displayed line keys
+nnoremap j gj
+nnoremap k gk
+
 "- tex (t) macros
-"-- textrm macro
-nnoremap tt i\textrm{}<Esc>i
 "-- math mode macro
 nnoremap t4 a$$<Esc>
+"-- textrm macro
+nnoremap t5 i\textrm{}<Esc>i
 "-- superscript macro
 nnoremap t6 la^{}<Esc>i
 "-- subscript macro
