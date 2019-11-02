@@ -17,10 +17,20 @@ set ignorecase
 set smartcase
 noremap <silent> <leader><cr> :noh<cr>
 
+" reduce delay that vim waits for key combos
+set timeoutlen=250
+
+" show hidden characters & fix unicode
+scriptencoding utf-8
+set encoding=utf-8
+set listchars=eol:⮠
+
 " mapping
 "- semi colon
 imap ;; <Esc>
 imap ;i ![]()<Esc>i
+imap oo <Esc>$a  <Enter>
+nnoremap oo $a  <Enter>
 
 "- time
 map <F2> :echo strftime('%r')<CR>
