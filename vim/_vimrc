@@ -25,12 +25,17 @@ scriptencoding utf-8
 set encoding=utf-8
 set listchars=eol:⮠
 
+" better tabs
+set expandtab
+set tabstop=4
+
+" html indentation
+filetype indent on
+
 " mapping
 "- semi colon
 imap ;; <Esc>
 imap ;i ![]()<Esc>i
-imap oo <Esc>$a  <Enter>
-nnoremap oo $a  <Enter>
 
 "- time
 map <F2> :echo strftime('%r')<CR>
@@ -43,6 +48,10 @@ nnoremap dd "_dd
 nnoremap j gj
 nnoremap k gk
 
+"- text-mode-less new line
+nnoremap o o<Esc>
+nnoremap O O<Esc>
+
 "- tex (t) macros
 "-- math mode macro
 nnoremap t4 a$$<Esc>
@@ -52,3 +61,7 @@ nnoremap t5 i\textrm{}<Esc>i
 nnoremap t6 la^{}<Esc>i
 "-- subscript macro
 nnoremap t7 la_{}<Esc>i
+
+"- HTML
+"-- doc setup
+imap !<Tab> <!DOCTYPE html><Esc>oi<html><Esc>oi<Tab><head><Esc>oi<Tab><Tab><meta charset="UTF-8"><Esc>oi<Tab><Tab><meta name="viewport" content="width=device-width, initial-scale=1.0"><Esc>oi<Tab><Tab><link rel="stylesheet" href="style.css"><Esc>oi<Tab></head><Esc>oi<Tab><body><Esc>oooi<Tab><Tab><script src="script.js"></script><Esc>oi<Tab></body><Esc>oi</html><Esc>4k$a<Tab><Tab>
