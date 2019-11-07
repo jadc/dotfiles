@@ -28,6 +28,7 @@ set listchars=eol:⮠
 " better tabs
 set expandtab
 set tabstop=4
+set shiftwidth=4
 
 " html indentation
 filetype indent on
