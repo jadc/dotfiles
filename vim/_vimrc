@@ -48,10 +48,6 @@ nnoremap ddd "_dd
 nnoremap j gj
 nnoremap k gk
 
-"- text-mode-less new line
-nnoremap o o<Esc>
-nnoremap O O<Esc>
-
 "- tex (t) macros
 "-- math mode macro
 nnoremap t4 a$$<Esc>
