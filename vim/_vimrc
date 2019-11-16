@@ -42,8 +42,7 @@ imap ;i ![]()<Esc>i
 map <F2> :echo strftime('%r')<CR>
 
 "- bufferless delete
-nnoremap d "_d
-nnoremap dd "_dd
+nnoremap ddd "_dd
 
 "- displayed line keys
 nnoremap j gj
