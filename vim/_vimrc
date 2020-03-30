@@ -33,6 +33,9 @@ set shiftwidth=4
 " html indentation
 filetype indent on
 
+" word wrap (as opposed to letters)
+set wrap linebreak nolist
+
 " mapping
 "- semi colon
 imap ;; <Esc>
