@@ -20,7 +20,7 @@ noremap <silent> <leader><cr> :noh<cr>
 " reduce delay that vim waits for key combos
 set timeoutlen=250
 
-" show hidden characters & fix unicode
+" show hidden characters & fix unicode 
 scriptencoding utf-8
 set encoding=utf-8
 set listchars=eol:⮠
