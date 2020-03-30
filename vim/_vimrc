@@ -38,9 +38,6 @@ filetype indent on
 imap ;; <Esc>
 imap ;i ![]()<Esc>i
 
-"- time
-map <F2> :echo strftime('%r')<CR>
-
 "- bufferless delete
 nnoremap ddd "_dd
 
