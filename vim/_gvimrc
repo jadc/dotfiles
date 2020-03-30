@@ -6,8 +6,13 @@ endif
 " Color scheme
 set termguicolors
 set background=dark
-colorscheme edge
 syntax on
+
+"" Edge settings
+let g:edge_style = 'neon'
+let g:edge_disable_italic_comment = 1
+
+colorscheme edge
 
 " Hides ugly ass shit
 set guioptions-=m
