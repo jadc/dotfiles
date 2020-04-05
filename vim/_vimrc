@@ -9,6 +9,7 @@ set backspace=indent,eol,start
 
 " relative numbers
 " set relativenumber
+set number
 
 " searching
 set hlsearch
