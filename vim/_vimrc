@@ -8,7 +8,7 @@ set noswapfile
 set backspace=indent,eol,start
 
 " relative numbers
-set relativenumber
+" set relativenumber
 
 " searching
 set hlsearch
